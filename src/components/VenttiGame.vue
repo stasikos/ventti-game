@@ -123,8 +123,6 @@ export default {
         runGame() {
             // Double bank from dealer
             this.bank.balance += this.player.betAmount;
-            // Shuffle the deck
-            this.deck = this.shuffle(this.deck);
             this.initialDeal();
             if (!this.gameDone) {
                 this.playersTurn = true;
